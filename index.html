@@ -9,20 +9,22 @@
 </head>
 
 <body>
-    <h1>Repo Grabber</h1>
+    <h1 class="wrapper">Repo Grabber</h1>
 
-    <form>
+    <form class="wrapper">
         <label for="username">GitHub username:</label>
-        <input name="username" type="text" id="username-input" required>
+        <input name="username" type="text" id="user-input" required>
+        <button type="submit">Submit</button>
     </form>
+
+    <p id="js-error-message" class="error-message"></p>
 
     <div class="results hidden">
         <h2>Repo results</h2>
-        <ul id="results-list">
+        <ul class="results-list">
         </ul>
     </div>
 
-    <p id="js-error-message" class="error-message"></p>
 
     <script 
     src="https://code.jquery.com/jquery-3.5.1.min.js" 
